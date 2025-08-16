@@ -1,69 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BAFCO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesotho Hub</title>
 
-</head>
-<style type="text/css">
-    .header{
-        background-color: greenyellow;
-        height:130px;
-        width:1270px;
-        text-align: center;
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f9f4;
+      color: #333;
     }
-    nav a {
-    margin: 0 10px;
-    color:black;
-    text-decoration: none;
-    }
-    nav img{
-        width: 20px;  /* icon width */
-        height: 20px; /* icon height */
-        vertical-align: middle; /* aligns with text */
-        margin-right: 5px; /* space between icon & text */
-    }
+
     
-    body{
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #18b574;
-    color: #333;
+    header {
+      background-color: green;
+      color: white;
+      padding: 20px;
+      text-align: center;
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      display: inline-block;
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    nav img {
+      width: 18px;
+      height: 18px;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+
     nav a:hover {
-    text-decoration: underline;
+      text-decoration: underline;
     }
 
+    
+    .welcome {
+      text-align: center;
+      padding: 40px 20px;
+    }
 
-</style>
+    .welcome h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .welcome p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    /* Categories Section */
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .category {
+      background: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .category:hover {
+      transform: translateY(-5px);
+    }
+    .category i {
+      font-size: 30px;
+      color: green;
+      margin-bottom: 10px;
+    }
+
+    
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    .social-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #18b574;
+    }
+
+    
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
 <body>
 
-    <header>
-        <h1>Lesotho hub website</h1>
-        <nav>
-            <a href="bafco.html"><img src="home.png" >Home</a>
-            <a href="business.html"><img src="business.png">Businness page</a>
-            <a href="about.html"><img src="about.png"></i> About us</a>
-            <a href="contact.html"><img src="contact.jpg"> Contact us</a>
-            <a href="tips.html"><img src="tip.png">Tips</a>
-            <a href="login.html"><img src="login.png">Sign up</a>
-        </nav>
+  <!-- Header -->
+  <header>
+    <h1>Lesotho Hub Website</h1>
+    <nav>
+      <a href="home.png"><img src="home.png">Home</a>
+      <a href="business.html"><img src="business.png">Business</a>
+      <a href="about.html"><img src="about.png">About Us</a>
+      <a href="contact.html"><img src="contact.jpg">Contact Us</a>
+      <a href="tips.html"><img src="tip.png">Tips</a>
+      <a href="login.html"><img src="login.png">Sign Up</a>
+    </nav>
+  </header>
 
-    </header>
+  
+  <section class="welcome">
+    <h2>Welcome to Lesotho hub</h2>
+    <p>Connecting farmers with customers across Lesotho. 
+       Explore fresh produce, livestock, dairy, fruits, and more on our platform.</p>
+  </section>
 
-    
+  <!-- Farmer Categories -->
+  <section class="categories">
+    <a href="business.html"><div class="category">
+      <i class="fas fa-seedling"></i>
+      <h3>Crop Farmers</h3>
+      <p>Maize, beans, sorghum, vegetables</p>
+    </div></a>
+    <div class="category">
+      <i class="fas fa-drumstick-bite"></i>
+      <h3>Livestock Farmers</h3>
+      <p>Cattle, goats, sheep, chickens</p>
+    </div>
+    <div class="category">
+      <i class="fas fa-cheese"></i>
+      <h3>Dairy Farmers</h3>
+      <p>Fresh milk, cheese, yogurt, butter</p>
+    </div>
+    <div class="category">
+      <i class="fas fa-apple-alt"></i>
+      <h3>Fruit Farmers</h3>
+      <p>Apples, peaches, plums, grapes</p>
+    </div>
+    <div class="category">
+      <i class="fas fa-egg"></i>
+      <h3>Other Products</h3>
+      <p>Eggs, honey, wool, firewood</p>
+    </div>
+  </section>
 
-    <footer>
-        <p>© 2025 Bafco</p>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://wa.me/your-number" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        </div>
 
-    </footer>
+  <footer>
+    <p>© 2025 Bafco | All Rights Reserved</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/26660000000" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </footer>
 
 </body>
 </html>
