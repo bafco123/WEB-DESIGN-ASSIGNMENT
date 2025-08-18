@@ -1,31 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BAFCO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us Lesotho Hub</title>
 
-</head>
-<style type="text/css">
-    .footer {
-      background-color: #222;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
-    }
-    @media (max-width: 600px) {
-      nav a {
-        display: block;
-        margin: 10px 0;
-      }
-    }
-    .header {
-      background-color: green;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -33,6 +16,19 @@
       background-color: #f4f9f4;
       color: #333;
     }
+
+    /* Header */
+    header {
+      background-color: green;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
     nav a {
       display: inline-block;
       margin: 0 15px;
@@ -41,56 +37,129 @@
       font-weight: bold;
       font-size: 16px;
     }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    nav img {
+      width: 18px;
+      height: 18px;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+
     
-     nav a:hover {
-    text-decoration: underline;
-    }
-    .article{
-        height: 100px;
-        width:1000px;
-        background-color: aliceblue;
-    }
-    nav img{
-        width: 20px;  /* icon width */
-        height: 20px; /* icon height */
-        vertical-align: middle; /* aligns with text */
-        margin-right: 5px; /* space between icon & text */
+    .about {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
     }
 
+    .about h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+      color: green;
+    }
 
-</style>
+    .about p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .about .mission,
+    .about .vision {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin: 20px 0;
+    }
+
+    .about i {
+      font-size: 28px;
+      color: green;
+      margin-bottom: 10px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+    .images{
+      text-align: center;
+      padding: 30px;
+    }
+
+    .social-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #18b574;
+    }
+  </style>
+</head>
 <body>
 
-    <header class="header">
-        <h1>Lesotho hub website</h1>
-        <nav>
-            <a href="bafco.html"><img src="home.png" >Home</a>
-            <a href="business.html"><img src="business.png">Businness page</a>
-            <a href="about.html"><img src="about.png"></i> About us</a>
-            <a href="contact.html"><img src="contact.jpg"> Contact us</a>
-            <a href="tips.html"><img src="tip.png">Tips</a>
-            <a href="login.html"><img src="login.png">Sign up</a>
-        </nav>
+  
+  <header>
+    <h1>Lesotho Hub Website</h1>
+    <nav>
+      <a href="Home.html"><img src="home.png">Home</a>
+      <a href="business.html"><img src="business.png">Business</a>
+      <a href="about.html"><img src="about.png">About Us</a>
+      <a href="contact.html"><img src="contact.jpg">Contact Us</a>
+      <a href="tips.html"><img src="tip.png">Tips</a>
+      <a href="login.html"><img src="login.png">Sign Up</a>
+    </nav>
+  </header>
 
-</header>
-    <div class="article">
-        <article>
-            <p>This is where Lesotho farmers can advertise their products.and the client 
-            can be able to products & prices of each business</p>
-         </article>
-
+  <!-- About Section -->
+  <section class="about">
+    <h2>About Lesotho Hub</h2>
+    <p>Lesotho Hub is a digital platform designed to connect farmers across Lesotho with buyers, businesses, and communities. Our goal is to make it easier for farmers to advertise their products and for customers to find fresh and reliable farm produce.</p>
+    
+    <div class="mission">
+      <i class="fas fa-bullseye"></i>
+      <h3>Our Mission</h3>
+      <p>To empower local farmers by giving them a modern marketplace where they can grow their businesses and improve food security in Lesotho.</p>
     </div>
 
+    <div class="vision">
+      <i class="fas fa-eye"></i>
+      <h3>Our Vision</h3>
+      <p>To become the leading online hub that connects every farmer in Lesotho to local and international customers, supporting sustainable agriculture and rural development.</p>
+    </div>
+  </section>
+  <section class="images">
+    <h2>Here are our farmers when on duty:</h2>
+    <div>
+      <img src="poultry.jpg" alt="Farmer 1" style="width: 300px; height: 300px">
+      <img src="farmers.jpg" alt="Farmer 2" style="width: 300px; height:300px">
+      <img src="cows.jpg" alt="Farmer 3" style="width: 300px; height: 300px">
+      <img src="grapes.jpeg" alt="Farmer 4" style="width: 300px; height: 300px">
+    </div>
+  </section>
 
-    <footer>
-        <p>© 2025 Bafco | All Rights Reserved</p>
+
+  <footer>
+    <p>© 2025 Bafco | All Rights Reserved</p>
     <div class="social-icons">
       <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
       <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="https://wa.me/26660000000" target="_blank"><i class="fab fa-whatsapp"></i></a>
     </div>
-
-    </footer>
+  </footer>
 
 </body>
 </html>
