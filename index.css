@@ -13,6 +13,13 @@ body {
       padding: 20px;
       text-align: center;
     }
+    .poultry-farmers img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin: 10px;
+    display: flex;
+  }
 
     header h1 {
       margin: 0;
@@ -104,6 +111,8 @@ body {
       text-decoration: none;  /* removes underline */
       color: inherit;         /* makes link use same color as normal text */
     }
+
+
 
 
     .social-icons a:hover {
