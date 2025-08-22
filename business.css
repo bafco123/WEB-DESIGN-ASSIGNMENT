@@ -1,0 +1,29 @@
+.header {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 24px;
+  text-align: left;   /* h1 goes to the left */
+}
+
+.header nav {
+  text-align: center; /* navigation centered */
+  margin-top: 10px;
+}
+
+nav a {
+  display: inline-block;
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
