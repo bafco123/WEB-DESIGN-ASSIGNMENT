@@ -1,32 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BAFCO</title>
-
-</head>
-<style type="text/css">
-    .footer {
-      background-color: #222;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
-    }
-    @media (max-width: 600px) {
-      nav a {
-        display: block;
-        margin: 10px 0;
-        
-      }
-    }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Lesotho Hub</title>
+  <style>
+    /* Header */
     .header {
       background-color: green;
       color: white;
-      padding: 20px;
-      text-align: center;
+      padding: 10px 20px;
     }
+
+    .page-title {
+      margin: 0;
+      font-size: 24px;
+      text-align: left;   /* h1 stays on the top left */
+    }
+
+    .header nav {
+      text-align: center; /* nav sits in the middle below */
+      margin-top: 10px;
+    }
+
     nav a {
       display: inline-block;
       margin: 0 15px;
@@ -35,75 +31,134 @@
       font-weight: bold;
       font-size: 16px;
     }
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f9f4;
-      color: #333;
+
+    nav img {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 5px;
     }
+
     nav a:hover {
-    text-decoration: underline;
-    }
-    nav img{
-        width: 20px;  /* icon width */
-        height: 20px; /* icon height */
-        vertical-align: middle; /* aligns with text */
-        margin-right: 5px; /* space between icon & text */
-    }
-    @media (max-width: 600px) {
-      nav a {
-        display: block;
-        margin: 10px 0;
-      }
+      text-decoration: underline;
     }
 
+    /* Contact Section */
+    .contact-section {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #f9f9f9;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
 
-</style>
+    .contact-section h2 {
+      text-align: center;
+      color: green;
+      margin-bottom: 20px;
+    }
+
+    .contact-info {
+      margin-bottom: 20px;
+      line-height: 1.8;
+    }
+
+    .contact-info p {
+      margin: 5px 0;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    form input, form textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    form button {
+      background-color: green;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    form button:hover {
+      background-color: darkgreen;
+    }
+
+    /* Footer */
+    footer {
+      background-color: green;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    .social-media a {
+      color: white;
+      margin: 0 10px;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+
+    .social-media a:hover {
+      color: #18b574;
+    }
+  </style>
+</head>
 <body>
 
-    <header class="header">
-        <h1>Contacts</h1>
-        <nav>
-            <a href="index.html"><img src="home.png" >Home</a>
-            <a href="business.html"><img src="business.png">Businness page</a>
-            <a href="about.html"><img src="about.png"></i> About us</a>
-            <a href="contact.html"><img src="contact.jpg"> Contact us</a>
-            <a href="tips.html"><img src="tip.png">Tips</a>
-            <a href="login.html"><img src="login.png">Sign up</a>
-        </nav>
+  <!-- Header -->
+  <header class="header">
+    <h1 class="page-title">Contact Us</h1>
+    <nav>
+      <a href="index.html"><img src="home.png">Home</a>
+      <a href="business.html"><img src="business.png">Business</a>
+      <a href="about.html"><img src="about.png">About Us</a>
+      <a href="contact.html"><img src="contact.jpg">Contact Us</a>
+      <a href="tips.html"><img src="tip.png">Tips</a>
+      <a href="login.html"><img src="login.png">Sign In</a>
+    </nav>
+  </header>
 
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <h2>We’d Love to Hear From You</h2>
+    
+    <div class="contact-info">
+      <p><strong>📍 Address:</strong> Maseru, Lesotho</p>
+      <p><strong>📞 Phone:</strong> +266 6000 0000</p>
+      <p><strong>📧 Email:</strong> info@lesothohub.com</p>
+    </div>
 
-
-
-    </header>
-    <section class="contact-form">
-        <h2>Send a message to Lesotho hub</h2>
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required/>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required/>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-        <a href="login.html" button type="submit">Send Message</button></a>
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
     </form>
   </section>
 
-    
-
-    <footer>
-        <p>© 2025 Bafco | All Rights Reserved</p>
-    <div class="social-icons">
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Bafco | All Rights Reserved</p>
+    <div class="social-media">
       <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
       <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="https://wa.me/26660000000" target="_blank"><i class="fab fa-whatsapp"></i></a>
     </div>
-
-    </footer>
+  </footer>
 
 </body>
 </html>

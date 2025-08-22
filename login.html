@@ -3,75 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign In - Lesotho Hub</title>
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="index.css">
-
+  <title>Login - Lesotho Hub</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f9f4;
-      color: #333;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+    /* Header */
+    .header {
+      background-color: green;
+      color: white;
+      padding: 10px 20px;
     }
 
-    .login-box {
-      background: white;
+    .page-title {
+      margin: 0;
+      font-size: 24px;
+      text-align: left;
+    }
+
+    .header nav {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    nav a {
+      display: inline-block;
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    nav img {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Login Section */
+    .login-section {
+      max-width: 400px;
+      margin: 60px auto;
+      background: #f9f9f9;
       padding: 30px;
       border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      width: 350px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       text-align: center;
     }
 
-    .login-box h2 {
+    .login-section h2 {
       margin-bottom: 20px;
       color: green;
     }
 
-    .input-group {
-      margin-bottom: 15px;
-      text-align: left;
+    form {
+      display: flex;
+      flex-direction: column;
     }
 
-    .input-group label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
-
-    .input-group input {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    .input-group input:focus {
-      border-color: green;
-      outline: none;
-    }
-
-    button {
-      width: 100%;
+    form input {
       padding: 12px;
-      background: green;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    form button {
+      background-color: green;
       color: white;
       border: none;
-      border-radius: 4px;
+      padding: 12px;
+      border-radius: 6px;
       font-size: 16px;
       cursor: pointer;
+      transition: background 0.3s;
     }
 
-    button:hover {
-      background: darkgreen;
+    form button:hover {
+      background-color: darkgreen;
     }
 
     .extra-links {
@@ -87,39 +100,66 @@
     .extra-links a:hover {
       text-decoration: underline;
     }
+
+    /* Footer */
+    footer {
+      background-color: green;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 60px;
+    }
+
+    .social-media a {
+      color: white;
+      margin: 0 10px;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+
+    .social-media a:hover {
+      color: #18b574;
+    }
   </style>
 </head>
-<header>
-    <h1>crop Farmers</h1>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1 class="page-title">Login</h1>
     <nav>
-      <a href="index.png"><img src="home.png">Home</a>
+      <a href="index.html"><img src="home.png">Home</a>
       <a href="business.html"><img src="business.png">Business</a>
       <a href="about.html"><img src="about.png">About Us</a>
       <a href="contact.html"><img src="contact.jpg">Contact Us</a>
       <a href="tips.html"><img src="tip.png">Tips</a>
-      <a href="login.html"><img src="login.png">Sign Up</a>
+      <a href="login.html"><img src="login.png">Sign In</a>
     </nav>
-<body>
+  </header>
 
-  <div class="login-box">
-    <h2><i class="fas fa-user"></i> Sign In</h2>
-    <form action="#" method="post">
-      <div class="input-group">
-        <label for="username">Email or Username</label>
-        <input type="text" id="username" name="username" placeholder="Enter your email or username" required>
-      </div>
-      <div class="input-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" placeholder="Enter your password" required>
-      </div>
+  <!-- Login Section -->
+  <section class="login-section">
+    <h2>Welcome Back</h2>
+    <form>
+      <input type="text" name="username" placeholder="Enter Username or Email" required>
+      <input type="password" name="password" placeholder="Enter Password" required>
       <button type="submit">Login</button>
     </form>
-
     <div class="extra-links">
+      <p>Don't have an account? <a href="#">Sign Up</a></p>
       <p><a href="#">Forgot Password?</a></p>
-      <p>Don’t have an account? <a href="signup.html">Sign Up</a></p>
     </div>
-  </div>
-  
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Bafco | All Rights Reserved</p>
+    <div class="social-media">
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/26660000000" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </footer>
+
 </body>
 </html>
