@@ -3,47 +3,160 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lesotho Hub</title>
+  <title>Livestock Farmers - Lesotho Hub</title>
+  <style>
+    /* Header */
+    .header {
+      background-color: green;
+      color: white;
+      padding: 10px 20px;
+    }
 
-  
-  
-  <link rel="stylesheet" href="index.css">
+    .page-title {
+      margin: 0;
+      font-size: 24px;
+      text-align: left;
+    }
 
+    .header nav {
+      text-align: center;
+      margin-top: 10px;
+    }
 
+    nav a {
+      display: inline-block;
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    nav img {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Livestock Section */
+    .livestock-farmers {
+      max-width: 1000px;
+      margin: 40px auto;
+      text-align: center;
+    }
+
+    .livestock-farmers h2 {
+      margin-bottom: 20px;
+      color: green;
+    }
+
+    .farmers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .farmer-card {
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .farmer-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .farmer-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .farmer-card h3 {
+      margin: 0;
+      color: darkgreen;
+      font-size: 18px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: green;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    .social-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #18b574;
+    }
+  </style>
 </head>
-<style type="text/css">
-  .livestock img {
-    width: 400px;
-    height: 300px;
-    object-fit: cover;
-    margin: 10px;
-    display: flex;
-  }
-</style>
 <body>
 
   <!-- Header -->
-  <header>
-    <h1>Livestock</h1>
+  <header class="header">
+    <h1 class="page-title">Livestock Farmers</h1>
     <nav>
-      <a href="index.png"><img src="home.png">Home</a>
+      <a href="index.html"><img src="home.png">Home</a>
       <a href="business.html"><img src="business.png">Business</a>
       <a href="about.html"><img src="about.png">About Us</a>
       <a href="contact.html"><img src="contact.jpg">Contact Us</a>
       <a href="tips.html"><img src="tip.png">Tips</a>
-      <a href="login.html"><img src="login.png">Sign Up</a>
+      <a href="login.html"><img src="login.png">Sign In</a>
     </nav>
   </header>
-  <div class="livestock">
-    <h2>Meet our Livestock Farmers</h2>
-    <img src="pigs.jpg" alt="Livestock Farmer 1" >
-    <img src="cows.jpg" alt="Livestock Farmer 2">
-    <img src="farmer2.jpg" alt="Livestock Farmer 3">
-    <img src="livestock4.jpg" alt="Livestock Farmer 4">
 
+  <!-- Livestock Farmers Section -->
+  <section class="livestock-farmers">
+    <h2>Meet Our Livestock Farmer and also see our livestock</h2>
+    <div class="farmers-grid">
 
+      <div class="farmer-card">
+        <img src="chicken.webp" alt="Livestock Farmer 1">
+        <h3>chickens available</h3>
+        <p>Specializes in cattle farming for beef and dairy.</p>
+      </div>
 
+      <div class="farmer-card">
+        <img src="cows.jpg" alt="Livestock Farmer 2">
+        <h3>cattle</h3>
+        <p>Produces high-quality wool and mutton.</p>
+      </div>
 
+      <div class="farmer-card">
+        <img src="farmer.jpg" alt="Livestock Farmer 3">
+        <h3>Farmer mohapi that herd and takes care of all this livestock</h3>
+        <p>Focuses on goat farming for milk and meat supply.</p>
+      </div>
+
+      <div class="farmer-card">
+        <img src="pigs.jpg" alt="Livestock Farmer 4">
+        <h3> well and grown pigs</h3>
+        <p>Runs a modern piggery with organic feed methods.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
     <p>© 2025 Bafco | All Rights Reserved</p>
     <div class="social-icons">
