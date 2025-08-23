@@ -66,4 +66,105 @@
       border: 1px solid #ddd;
       border-radius: 8px;
       padding: 15px;
-      box-shadow: 0 2px 6px r
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .product-card h3 {
+      margin: 0;
+      color: darkgreen;
+      font-size: 18px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: green;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    .social-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #18b574;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1 class="page-title">Local Products</h1>
+    <nav>
+      <a href="index.html"><img src="home.png">Home</a>
+      <a href="business.html"><img src="business.png">Business</a>
+      <a href="about.html"><img src="about.png">About Us</a>
+      <a href="contact.html"><img src="contact.jpg">Contact Us</a>
+      <a href="tips.html"><img src="tip.png">Tips</a>
+      <a href="login.html"><img src="login.png">Sign In</a>
+    </nav>
+  </header>
+
+  <!-- Products Section -->
+  <section class="products">
+    <h2>Explore Local Handicrafts & Products</h2>
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="blanket.jpg" alt="Basotho Blanket">
+        <h3>Basotho Blankets</h3>
+        <p>Traditional wool blankets, symbol of Basotho culture.</p>
+      </div>
+
+      <div class="product-card">
+        <img src="basket.jpg" alt="Handmade Basket">
+        <h3>Handmade Baskets</h3>
+        <p>Woven with natural grass, perfect for storage or decoration.</p>
+      </div>
+
+      <div class="product-card">
+        <img src="pottery.jpg" alt="Clay Pottery">
+        <h3>Clay Pottery</h3>
+        <p>Authentic pottery made by local artisans.</p>
+      </div>
+
+      <div class="product-card">
+        <img src="jewelry.jpg" alt="Beaded Jewelry">
+        <h3>Beaded Jewelry</h3>
+        <p>Colorful handmade jewelry showcasing African design.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Bafco | All Rights Reserved</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/26660000000" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>
