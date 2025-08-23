@@ -68,7 +68,7 @@ body {
       margin: auto;
     }
 
-    /* Categories Section */
+    
     .categories {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -108,8 +108,8 @@ body {
       transition: color 0.3s;
     }
     a {
-      text-decoration: none;  /* removes underline */
-      color: inherit;         /* makes link use same color as normal text */
+      text-decoration: none;  
+      color: inherit;         
     }
 
 
