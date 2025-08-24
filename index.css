@@ -1,129 +1,241 @@
+/* General Reset */
 body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f9f4;
-      color: #333;
-    }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f9f4;
+  color: #333;
+}
 
-    
-    header {
-      background-color: green;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    .poultry-farmers img {
-    width: 400px;
-    height: 300px;
-    object-fit: cover;
-    margin: 10px;
-    display: flex;
+/* Header */
+.header {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+}
+
+.top-bar {
+  text-align: left; /* h1 on the left */
+}
+
+.page-title {
+  margin: 0;
+  font-size: 28px;
+}
+
+nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+nav a {
+  display: inline-block;
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background: url('farm.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero-text {
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+  display: inline-block;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: green;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: darkgreen;
+}
+
+/* Welcome Section */
+.welcome {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Categories Section */
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+}
+/* Remove default link colors in categories */
+.categories a {
+  text-decoration: none;   /* removes underline */
+  color: inherit;          /* inherits the text color of parent */
+  display: block;          /* makes the whole card clickable */
+}
+
+.categories a:hover {
+  color: inherit;          /* prevents hover from turning blue */
+}
+
+
+.category {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.category:hover {
+  transform: translateY(-5px);
+}
+
+.category i {
+  font-size: 40px;
+  color: green;
+  margin-bottom: 10px;
+}
+
+/* About Preview */
+.about-preview {
+  text-align: center;
+  padding: 40px 20px;
+  background: #e8f5e9;
+}
+
+.about-preview h2 {
+  margin-bottom: 15px;
+}
+
+/* Why Choose Us */
+.why-choose {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.feature {
+  background: white;
+  padding: 20px;
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.feature i {
+  font-size: 30px;
+  color: green;
+  margin-bottom: 10px;
+}
+
+/* Video Section */
+.video-section {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f9f9f9;
+}
+
+.video-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.video-container video {
+  width: 60%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* CTA Section */
+.cta {
+  text-align: center;
+  padding: 50px 20px;
+  background: green;
+  color: white;
+}
+
+.cta .btn {
+  background: white;
+  color: green;
+}
+
+.cta .btn:hover {
+  background: #e8f5e9;
+}
+
+/* Footer */
+footer {
+  background: green;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.social-icons a:hover {
+  color: #ddd;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 24px;
   }
 
-    header h1 {
-      margin: 0;
-      font-size: 32px;
-    }
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    
-    nav {
-      margin-top: 10px;
-    }
-
-    nav a {
-      display: inline-block;
-      margin: 0 15px;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 16px;
-    }
-
-    nav img {
-      width: 18px;
-      height: 18px;
-      vertical-align: middle;
-      margin-right: 6px;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    
-    .welcome {
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    .welcome h2 {
-      font-size: 28px;
-      margin-bottom: 15px;
-    }
-
-    .welcome p {
-      font-size: 18px;
-      max-width: 600px;
-      margin: auto;
-    }
-
-    
-    .categories {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      padding: 40px;
-    }
-    .category {
-      background: white;
-      padding: 20px;
-      text-align: center;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
-    }
-    .category:hover {
-      transform: translateY(-5px);
-    }
-    .category i {
-      font-size: 30px;
-      color: green;
-      margin-bottom: 10px;
-    }
-
-    
-    footer {
-      background-color:green;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
-    }
-
-    .social-icons a {
-      color: white;
-      margin: 0 10px;
-      font-size: 20px;
-      transition: color 0.3s;
-    }
-    a {
-      text-decoration: none;  
-      color: inherit;         
-    }
-
-
-
-
-    .social-icons a:hover {
-      color: #18b574;
-    }
-
-    
-    @media (max-width: 600px) {
-      nav a {
-        display: block;
-        margin: 10px 0;
-        
-      }
-    }
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+}

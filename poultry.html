@@ -96,6 +96,25 @@
       padding: 15px;
       margin-top: 40px;
     }
+    
+  
+
+
+    .video-container {
+      max-width: 800px;
+      margin: 20px auto;
+    }
+    .video-container video {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      height: 200px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+
 
     .social-icons a {
       color: white;
@@ -129,27 +148,31 @@
     <h2>Meet Our Poultry Farmers</h2>
     <div class="farmers-grid">
 
-      <div class="farmer-card">
-        <img src="chicken.webp" alt="Poultry Farmer 1">
+      <div class="video-container">
+        <video width="600" height="400" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
         <h3>Farmer Neo</h3>
         <p>Specializes in free-range chicken farming.</p>
       </div>
 
       <div class="farmer-card">
         <img src="eggs.webp" alt="Poultry Farmer 2">
-        <h3>Farmer Kamohelo</h3>
+        <h3>Farmer phoka</h3>
         <p>Provides fresh eggs daily to the local market.</p>
       </div>
 
       <div class="farmer-card">
         <img src="farmer.jpg" alt="Poultry Farmer 3">
-        <h3>Farmer Lineo</h3>
+        <h3>Farmer Bakuena</h3>
         <p>Focuses on broiler production for meat supply.</p>
       </div>
 
       <div class="farmer-card">
-        <img src="farmhouse.jpg" alt="Poultry Farmer 4">
-        <h3>Farmer Teboho</h3>
+        <img src="farmer2.jpg" alt="Poultry Farmer 4">
+        <h3>Farmer Ofsiri</h3>
         <p>Runs a sustainable poultry farm with modern housing.</p>
       </div>
 

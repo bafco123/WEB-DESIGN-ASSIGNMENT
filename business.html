@@ -1,118 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="products.css">
-    <title>Lesotho hub</title>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Page - Lesotho Hub</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f9f4;
+      color: #333;
+    }
+
+    /* Header */
+    .header {
+      background-color: green;
+      color: white;
+      padding: 15px 20px;
+    }
+    .page-title {
+      margin: 0;
+      font-size: 24px;
+      text-align: left;
+    }
+    nav {
+      text-align: center;
+      margin-top: 10px;
+    }
+    nav a {
+      display: inline-block;
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    nav img {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+
+    /* Products Section */
+    .products {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .products h2 {
+      text-align: center;
+      color: green;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .product {
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+    }
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    .product h3 {
+      margin: 0;
+      color: darkgreen;
+    }
+    .product p {
+      font-size: 14px;
+      margin: 8px 0 12px;
+      color: #555;
+    }
+    .btn {
+      display: inline-block;
+      background: green;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: darkgreen;
+    }
+
+    /* Table */
+    .table {
+      max-width: 1000px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      overflow-x: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #ddd;
+    }
+    th {
+      background-color: green;
+      color: white;
+    }
+
+    /* Footer */
+    footer {
+      background-color: green;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+    .social-media a {
+      color: white;
+      margin: 0 10px;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+    .social-media a:hover {
+      color: #18b574;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+      .product img {
+        height: 160px;
+      }
+    }
+    @media (max-width: 480px) {
+      .page-title {
+        font-size: 20px;
+      }
+      nav a {
+        font-size: 14px;
+      }
+      th, td {
+        font-size: 14px;
+        padding: 8px;
+      }
+    }
+  </style>
 </head>
-
-
 <body>
 
-      <header class="header">
-        <h1 class="page-title">Business Page</h1>
-        <nav>
-          <a href="index.html"><img src="home.png">Home</a>
-          <a href="business.html"><img src="business.png">Business page</a>
-          <a href="about.html"><img src="about.png">About us</a>
-          <a href="contact.html"><img src="contact.jpg">Contact us</a>
-          <a href="Tips.html"><img src="tip.png">Tips</a>
-          <a href="login.html"><img src="login.png">Sign up</a>
-        </nav>
-      </header>
+  <!-- Header -->
+  <header class="header">
+    <h1 class="page-title">Business Page</h1>
+    <nav>
+      <a href="index.html"><img src="home.png">Home</a>
+      <a href="business.html"><img src="business.png">Business Page</a>
+      <a href="about.html"><img src="about.png">About Us</a>
+      <a href="contact.html"><img src="contact.jpg">Contact Us</a>
+      <a href="Tips.html"><img src="tip.png">Tips</a>
+      <a href="login.html"><img src="login.png">Sign Up</a>
+    </nav>
+  </header>
 
-        
+  <!-- Products Section -->
+  <section class="products">
+    <h2>Products</h2>
+    <p>Here are some of the products available from Lesotho farmers:</p>
+    <div class="product-grid">
 
-    
-      <div class="products">
-        <h2>Products</h2>
-        <p>Here are some of the products available from Lesotho farmers:</p>
-
-        <div class="product-grid">
-
-          <div class="product">
-            <img src="beans.jpg" alt="Beans">
-            <h3>Beans</h3>
-          </div>
-
-          <div class="product">
-            <img src="sorgum.webp" alt="Sorghum">
-            <h3>Sorghum</h3>
-          </div>
-
-          <div class="product">
-            <img src="milk.jpg" alt="Milk">
-            <h3>Milk</h3>
-          </div>
-
-          <div class="product">
-            <img src="maize.jpg" alt="Maize">
-            <h3>Maize</h3>
-          </div>
-
-          <div class="product">
-            <img src="grapes.jpeg" alt="Grapes">
-            <h3>Grapes</h3>
-          </div>
-
-          <div class="product">
-            <img src="chicken.webp" alt="Chicken">
-            <h3>Chicken</h3>
-          </div>
-
-          <div class="product">
-            <img src="apple.jpeg" alt="Apples">
-            <h3>Apples</h3>
-          </div>
-
-          <div class="product">
-            <img src="eggs.webp" alt="Eggs">
-            <h3>Eggs</h3>
-          </div>
-
-        </div>
+      <div class="product">
+        <img src="beans.jpg" alt="Beans">
+        <h3>Beans</h3>
+        <p>Nutritious and organic beans harvested locally.</p>
+        <a href="crop.html" class="btn">View More</a>
       </div>
 
-    <div class="table">
-        <table>
-            <tr>
-                <th>Product</th>
-                <th>Price</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td>Beans</td>
-                <td>M52.00 per kg</td>
-                <td>Get affordable fresh beans</td>
-            </tr>
-            <tr>
-                <td>Sorgum</td>
-                <td>M41.50 per kg</td>
-                <td>High-quality sorgum </td>
-            </tr>
-            <tr>
-                <td>Milk</td>
-                <td>M15.00 per liter</td>
-                <td>Fresh milk from local farms</td>
-            </tr>
-        </table>
+      <div class="product">
+        <img src="sorgum.webp" alt="Sorghum">
+        <h3>Sorghum</h3>
+        <p>High-quality sorghum ideal for flour and porridge.</p>
+        <a href="crop.html" class="btn">View More</a>
+      </div>
+
+      <div class="product">
+        <img src="milk.jpg" alt="Milk">
+        <h3>Milk</h3>
+        <p>Fresh dairy milk straight from local farms.</p>
+        <a href="dairy.html" class="btn">View More</a>
+      </div>
+
+      <div class="product">
+        <img src="maize.jpg" alt="Maize">
+        <h3>Maize</h3>
+        <p>Golden maize perfect for pap and other dishes.</p>
+        <a href="crop.html" class="btn">View More</a>
+      </div>
+
+      <div class="product">
+        <img src="grapes.jpeg" alt="Grapes">
+        <h3>Grapes</h3>
+        <p>Fresh and juicy grapes grown in fertile soils.</p>
+        <a href="fruit.html" class="btn">View More</a>
+      </div>
+
+      <div class="product">
+        <img src="chicken.webp" alt="Chicken">
+        <h3>Chicken</h3>
+        <p>Healthy poultry raised by skilled farmers.</p>
+        <a href="poultry.html" class="btn">View More</a>
+      </div>
+
+      <div class="product">
+        <img src="apple.jpeg" alt="Apples">
+        <h3>Apples</h3>
+        <p>Delicious apples full of natural sweetness.</p>
+        <a href="fruit.html" class="btn">View More</a>
+      </div>
+
+      <div class="product">
+        <img src="eggs.webp" alt="Eggs">
+        <h3>Eggs</h3>
+        <p>Farm fresh eggs available daily.</p>
+        <a href="poultry.html" class="btn">View More</a>
+      </div>
+
     </div>
+  </section>
 
-    
+  <!-- Table Section -->
+  <div class="table">
+    <table>
+      <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>Beans</td>
+        <td>M52.00 per kg</td>
+        <td>Get affordable fresh beans</td>
+      </tr>
+      <tr>
+        <td>Sorghum</td>
+        <td>M41.50 per kg</td>
+        <td>High-quality sorghum</td>
+      </tr>
+      <tr>
+        <td>Milk</td>
+        <td>M15.00 per liter</td>
+        <td>Fresh milk from local farms</td>
+      </tr>
+    </table>
+  </div>
 
-
-    <footer>
-        <p>© 2025 Bafco | All Rights Reserved</p>
-        <div class="social-media">
-          <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-          <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://wa.me/26660000000" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        </div>
-
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Bafco | All Rights Reserved</p>
+    <div class="social-media">
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/26660000000" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </footer>
 
 </body>
 </html>
